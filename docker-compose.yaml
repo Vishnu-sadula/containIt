@@ -1,0 +1,33 @@
+
+services:
+
+  backend:
+    build: backend
+    hostname: backend-host
+    volumes:
+      - ./backend:/app
+    ports:
+      - "5000:5000"
+    environment:
+      - FRONTEND_URL=http://localhost:8000
+    networks:
+      - pixelLoft-network
+
+  frontend:
+    build: frontend
+    hostname: frontend-host
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - BACKEND_URL=http://localhost:5000
+    links:
+      - backend
+    depends_on:
+      - backend
+    networks:
+      - pixelLoft-network
+    
+networks:
+  pixelLoft-network: {}
