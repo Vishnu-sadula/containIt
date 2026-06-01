@@ -7,6 +7,13 @@ Follow these step by step instructions to get the application up and running loc
 3. docker-compose ps -- to verify running services and ports
 
 ### Verify services on the localhost
+
 Access "http://localhost:5000" for backend app
 
 Access "http://localhost:3000" for frontend app
+
+### To stop or tear down the application
+
+docker-compose stop --- to stop the application without deleting the containers
+
+docker-compose down --- to stop services, remove containers, networks and volumes
