@@ -10,7 +10,7 @@ Follow these step by step instructions to get the application up and running loc
 
 Access "http://localhost:5000" for backend app
 
-Access "http://localhost:3000" for frontend app
+Access "http://localhost:8000" for frontend app
 
 ### To stop or tear down the application
 
