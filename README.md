@@ -14,4 +14,5 @@ Access "http://localhost:3000" for frontend app
 ### To stop or tear down the application
 
 docker-compose stop --- to stop the application without deleting the containers
+
 docker-compose down --- to stop services, remove containers, networks and volumes
