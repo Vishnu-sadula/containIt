@@ -5,10 +5,17 @@ on:
 
 jobs:
   greet:
-    runs-on: ubuntu-latest
-    steps:
+      env: 
+          VAR1: "Charminar"
+          VAR2: "Summer heat"
+      runs-on: ubuntu-latest
+      steps:
       - name: Greet the User
         run: echo "Hello World!"
       - run: ls -l
       - uses: actions/checkout@v5
       - run: ls -l
+      - name: Run script
+        run: |
+          echo: "Hello $VAR1"
+          echo: "How is the $VAR2"
