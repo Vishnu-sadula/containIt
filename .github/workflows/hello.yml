@@ -17,5 +17,5 @@ jobs:
       - run: ls -l
       - name: Run script
         run: |
-          echo: "Hello $VAR1"
-          echo: "How is the $VAR2"
+          echo "Hello $VAR1"
+          echo "How is the $VAR2"
